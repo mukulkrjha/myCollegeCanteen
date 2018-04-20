@@ -12,6 +12,16 @@ You need to have a localserver( apache,mySql,php,i.e xampp as whole ) on your ma
  2.Database configuration :- Create a database 'dbms_project'.Imside it create tables with name 
  fooditems(foodname ,foodcategory ,price ,available),<br>
  users (i.e inside ) and categorytable(category ,catname)
+ 
+ <h3>SCREENSHOTS</h3>
+ 
+ ![mainpage](https://user-images.githubusercontent.com/32808680/39042728-2ee92630-44a9-11e8-9809-f5d5e5f62748.png)
+![adminlogin](https://user-images.githubusercontent.com/32808680/39043546-5a10714a-44ab-11e8-9959-3d845a9300eb.png)
+![admin-page](https://user-images.githubusercontent.com/32808680/39043547-5a599dde-44ab-11e8-8e2c-11d2ef6fd4cf.png)
+![login-out](https://user-images.githubusercontent.com/32808680/39043548-5a8ac742-44ab-11e8-8303-cc08faacc74f.png)
+![mainpage2](https://user-images.githubusercontent.com/32808680/39043549-5abcbba8-44ab-11e8-9c10-17d11ea114b3.png)
+![order](https://user-images.githubusercontent.com/32808680/39043550-5af0752e-44ab-11e8-9c4b-5c407377e90a.png)
+
 
 <h3>FEATURES</h3>
 
