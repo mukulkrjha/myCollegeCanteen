@@ -1,0 +1,26 @@
+
+@import "style__scss/mainpage.scss";
+@import "style__scss/welcomepage.scss";
+@import "style__scss/utilities.scss";
+@import "style__scss/signup.scss";
+@import "style__scss/order_admin.scss"; 
+@import "style__scss/about.scss";
+@import "style__scss/slider.scss";
+
+*
+{
+   margin:0;
+   padding:0;
+   box-sizing:border-box;
+  
+}
+
+html
+{
+  font-size:10px;
+}
+
+body{
+   padding:20px;
+   font-family: 'work sans',cursive;
+}
