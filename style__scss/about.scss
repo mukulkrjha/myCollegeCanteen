@@ -1,0 +1,82 @@
+
+#footer
+{
+   
+    padding:4rem;
+    background-color: #282C35; 
+    text-align:center;
+
+}
+
+
+.footer__container
+{
+   margin-top:3rem;
+   font-size: 1.6rem;
+
+   &--left
+    {
+      float:left;
+      width:50%;
+      padding:3rem;
+    }
+
+   &--right
+    {
+      padding:3rem;
+      float:left;
+      width:50%
+    }
+
+}
+.social-links-cont
+{
+ padding: 1rem auto;
+ text-align: center;
+}
+
+.social-links
+{
+
+  &__icon
+  {
+   display:inline-block;
+    &--fb
+    {
+      padding-right:5rem;
+      
+      & img
+      {
+        transform:translateY(1rem);
+        width:6rem;
+        height:6rem;
+      }
+
+    }
+    &--twitter
+    {
+      padding-right:5rem;
+      & img
+      {
+        width:3.5rem;
+        height:3.5rem;
+      }
+
+    }
+    &--github
+    {
+      padding:1rem;
+      & img
+      {
+        width:3.5rem;
+        height:3.5rem;
+      }
+
+    }
+  }
+
+}
+
+
+
+

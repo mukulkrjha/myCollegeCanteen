@@ -1,0 +1,80 @@
+
+#Welcomepage
+{
+   font-family: 'permanent Marker',cursive !important ;
+   height:100vh;	
+   background-image: linear-gradient(105deg,white 0%, white 46%,#f23535 46%,#f23535 100%);
+  margin-top:-40px;
+}
+.Welcomeline
+{
+ 
+   text-transform: uppercase;
+   font-size:5rem;
+   letter-spacing: 2px;
+   line-height: 8.5rem;   /*  seperate the lines a little bit  */
+   text-align:center;
+   position:absolute;
+   top:45%;
+   left:50%;
+   transform: translate(-50%,-45%);   
+
+}
+.Welcome1
+{
+	display:block;
+	animation-name: u-moveInRight;
+	animation-duration:2s;
+}
+.Welcome2
+{
+	display:block;
+	animation-name: u-moveInLeft;
+	animation-duration:2s;
+}
+
+
+.Continuebtn 
+{
+	margin:8rem;
+	background-image: linear-gradient(to right ,gainsboro,yellow);
+	padding: 0 2rem;
+	font-size: 2.5rem;
+	text-decoration: none;
+	display:inline-block;
+	border-radius: 5rem;
+	animation-name:u-moveUp;
+	animation-delay: 0;
+	animation-duration: 2.5s;
+	
+}
+
+.Continuebtn a ,.Continuebtn a:visited{
+	text-decoration:none;
+  outline:none;
+  color:black;
+
+}
+
+.Continuebtn a:hover .arrow
+{
+   border:solid orange;
+   border-width: 0 6px 6px 0;
+   display: inline-block;
+   padding: 6px;
+}
+.Continuebtn a:hover
+{ 
+  color:orange;
+
+}
+.arrow{
+    border: solid black;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 6px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}

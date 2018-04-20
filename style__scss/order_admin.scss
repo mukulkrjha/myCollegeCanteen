@@ -1,0 +1,366 @@
+
+.container
+{
+   position:relative;
+   top:3.7rem;
+   left:-2rem;
+   width:100vw;
+   font-size:1.6rem;
+   
+
+}
+.search-cont, .admin-search-cont
+{
+   position:relative;
+   background-image: url("./photos/searchback2.jpg");
+   padding: 10rem;
+}
+.search
+{
+  position: absolute;
+  top:50%; 
+  left:50%;
+  transform:translate(-50%,-50%);
+  padding:0px;
+  border:2px solid black;
+  border-radius:15px;
+  overflow: hidden;
+  & input
+  {
+    border :none;
+    padding:1rem;
+    &[type='text']
+    {
+      width:35rem;
+     } 
+     &[type='submit']
+     {
+      background-color: #cbd2db;
+     
+     }
+   }
+}
+
+.cart{
+   
+  & h3
+  {
+    text-align: center;
+    text-transform: uppercase;
+    margin:4rem 0;
+  }
+  &__item
+  {
+    padding: 1rem;
+    border:2px solid #f4b44b;
+    border-radius: 10px;
+    width:95%;
+     text-transform: uppercase;
+    margin: 1rem auto;
+     overflow: hidden;
+ 
+    &__name
+    {
+      display:inline-block;
+      padding: 1rem; 
+      float:left;
+    }  
+   
+   &__right
+    {
+      float:right;
+       transform:translateX(4rem); 
+       transition:transform 0.3s;
+       &__price
+       {
+         display:inline-block;
+
+         padding: 1rem;
+         padding-right:2rem;
+         float:left;
+       }
+      &__cancel
+       {
+         display:inline-block;
+         padding: 1rem;
+         float:left;
+       
+       }
+       
+
+    }
+   &:nth-child(odd)
+  {
+    background-color: #bcced1;
+    
+  } 
+   &:nth-child(even)
+  {
+    color: aliceblue;
+    
+  }
+  
+  }
+
+}
+
+//////search button///////
+
+.search-submit
+{
+  display:inline-block;
+
+}
+
+.category-select
+{
+ 
+background-color: none;
+}
+.searchresult
+{
+  &__heading
+  {
+    text-align:center;
+    padding:2rem ;
+    letter-spacing: 3px;
+
+
+  }
+}
+
+.grid-cont{
+
+  display: grid;
+  grid-template-columns:2fr 1fr;
+  background-image: linear-gradient( to right bottom ,rgba(#314755,1),  rgba(#26a0da,1) );
+ 
+}
+
+#itemOffered-cont{
+ 
+  padding: 3rem  1rem;
+ 
+
+}
+.itemOffered{
+    width:90%;
+    padding:2rem;
+    margin:2rem auto;
+    display:grid;
+    grid-template-columns:1fr 2fr 1fr;
+    grid-column-gap:2rem;
+    background-color:#eac688;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 4px white;
+    text-transform: uppercase;
+    &__image{
+        
+        background-color:#f9dd75;
+        height:15rem;
+
+    }
+    &__content{
+      // padding:3rem 0 0 1rem;
+        height:15rem;
+        
+        &--span{
+          font-weight: bold;
+          display:block;
+           padding:15px 5px ; 
+        }
+
+    }
+    &__side{
+
+      
+   
+     &--add
+      { 
+            padding:1rem 1rem 1rem 3rem;
+            height:5rem;
+            //background-color:#f9dd75;
+            //border-radius: 20px;
+            margin-top:1rem;
+
+          &::after{
+                 content:" >>";
+                 display:inline-block;  /////without inline-block transform does not work/////
+                 transform: translate(3px);
+                 transition:all 0.4s;
+                }
+         
+               &:hover::after{
+                 transform: translate(13px);
+                
+               }
+         
+              &:hover{
+                 color:green;
+              }
+       }
+       &--left{
+           padding:1rem 1rem 1rem 3rem;
+           height:5rem;
+          // background-color:#f9dd75;
+          // border-radius: 20px; 
+           margin-top:1rem;
+       }
+    }
+   
+
+}
+#cartitems{
+  padding: 3rem 4rem;
+  
+  &_h3{
+   padding: 10px;
+   text-transform: uppercase;
+   text-align: center;
+   color:aliceblue;
+   font-size: 2.8rem;
+   margin-bottom:4rem;
+  }
+
+
+
+}
+
+
+
+/******************** ADMIN PAGE **********************/
+
+.admin-search-cont{
+ 
+  height:200px;
+  background-color: beige;
+  position: relative;
+}
+.admin-search{
+ 
+  position:absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+  
+  & input[type="number"]
+  {
+    width:10rem;
+    border:1px solid black;
+    padding:0.7rem;
+    border-radius:4px ; 
+  }
+  & input[type="text"],& input[type="submit"]{
+     border:1px solid black;
+     padding:0.7rem;
+     border-radius:4px ;     
+  }
+ & select{
+     background-color:white;
+     border:1px solid black;
+    -moz-appearance:none;
+     padding:0.7rem;
+     border-radius:4px ;
+  }
+}
+
+.grid-cont-admin{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width:100vw;
+
+}
+.all_items_head{
+  grid-column: 1 / 5;
+  height:8rem;
+  background-color:red;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 10px;
+  padding: 3rem;
+  font-size: 2.3rem;
+  color: aliceblue;
+}
+
+
+
+.col-1-of-4{
+ 
+  & ul{
+    list-style: none;
+
+  }
+  & li{
+    padding:1rem 2rem ;
+
+    &:nth-child(2){
+      padding:3rem 2rem 1rem 2rem ;
+     }
+      &:nth-child(even)> .item-admin{
+        background-color: salmon;
+     }
+
+  }
+
+  border-right:1px solid black;
+  min-height: 500px;
+  background-image:linear-gradient(to right bottom,rgba(#00d2ff,0.5),rgba(#3a7bd5,0.5));
+
+}
+.catHead{
+  height: 5rem;
+  background-color: beige;
+  text-align:left;
+  padding:1rem ; 
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  
+  &::after{
+   content:"\2193";
+   padding: 1rem 0 1rem 4rem;
+   
+   }
+
+}
+.item-admin{
+
+   display:inline-block;
+   width:98%;
+   background-color:#ffffad; 
+   border: 1px solid red;
+   border-radius:5px;
+   padding:2rem 1rem ;
+   box-shadow: 0px 5px 5px white;
+   overflow:hidden;
+   text-transform:uppercase;
+ 
+  &_name{
+    display: inline-block;
+    float:left;
+   }
+  &_price{
+    display: inline-block;
+    margin-left:2rem;
+  }
+  &_avail{
+    display:inline-block;
+    float:right;
+    transform:translateX(4rem);  
+    transition: all 0.5s;
+    &:hover{
+        transform:translateX(0rem);
+     }
+  }
+ 
+  &_cancel{
+    display: inline-block;
+    margin-left:4rem;
+
+  }
+  
+     
+  
+ 
+
+}
